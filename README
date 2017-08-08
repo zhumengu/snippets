@@ -1,0 +1,3 @@
+## vim 编辑器 snipMate 插件的 snippets 补充
+  $ cd $HOME/.vim
+  $ git clone https:/github.com/zhumengu/snippets.git
