@@ -1,0 +1,41 @@
+snippet =
+	{{{ $${1} }}}${2}
+snippet @sec
+	@section('${1}')${2}
+	@stop
+snippet @ext
+	@extends('${1}')${2}
+snippet @yie
+	@yield('${1}')${2}
+snippet @if
+	@if (${1:condition})
+		${2}
+	@endif
+snippet @ife
+	@if (${1:condition})
+		${2}
+	@else
+		${3}
+	@endif
+snippet @unless
+	@unless (${1})
+		${2}
+	@endif
+snippet @for
+	@for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++})
+		${4: // code...}
+	@endfor
+snippet @fore
+	@foreach ($${1:collet} as $${2:item})
+		${3}
+	@endforeach
+snippet @forel
+	@forelse ($${1:$collet} as $${2:item})
+		${3}
+	@empty
+		${4}
+	@endforeach
+snippet @wh
+	@while (${1:condition})
+		${2}
+	@endwhile
