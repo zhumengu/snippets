@@ -1,0 +1,24 @@
+snippet =
+	{{ ${1:variable} }}${2:}
+snippet extends
+	{% extends "${1}" %}${2:}
+snippet block
+	{% block ${1:name} %}${2:content}{% endblock %}${3:}
+snippet if
+	{% if ${1:condition} %}
+		${2:}
+	{% endif %}${3:}
+snippet ife
+	{% if ${1:condition} %}
+		${2:# code}
+	{% else %}
+		${3:# code}
+	{% endif %}${4:}
+snippet for
+	{% for ${1:item} in ${2:set} %}
+		${3:# code}
+	{% endfor %}${4:}
+snippet import
+	{% import '${1:html}' as ${2:alias} %}
+snippet include
+	{% include '${1:html}' %}
